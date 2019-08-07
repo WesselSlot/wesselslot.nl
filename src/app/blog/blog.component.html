@@ -1,3 +1,10 @@
-<div *ngFor="let item of getBlogItems() | keyvalue">
-    {{item.key}}:{{item.value.title}}
+<div class="row">
+    <div *ngFor="let item of getBlogItems()" class="col-lg-4">
+        <img src="/assets/images/vlad-talk.jpg"/>
+        <div class="blog">
+            <span class="title">{{item.title}}</span>
+            <p>{{ item.content }}</p>
+        </div>
+    </div>
 </div>
+

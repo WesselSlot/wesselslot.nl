@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Blog} from '../core/models/blog';
+import {BlogService} from "./blog.service";
 
 @Component({
   selector: 'app-blog',
@@ -8,16 +9,16 @@ import {Blog} from '../core/models/blog';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+    constructor(
+        private blogService: BlogService
+    ) {
+    }
 
-  ngOnInit() {
+    ngOnInit() {
       this.getBlogItems();
-  }
+    }
 
-  public getBlogItems(): Blog[] {
-      return [
-          new Blog('test', 'test jansd kdnmg js dfj', 'test'),
-          new Blog('test2', 'test4 jsdnf j34 sl', 'test')
-      ];
-  }
+    public getBlogItems(): Blog[] {
+        return this.blogService.getBlogItems();
+    }
 }
