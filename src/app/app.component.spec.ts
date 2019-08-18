@@ -1,6 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { HomeComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 
 describe('HomeComponent', () => {
   beforeEach(async(() => {
@@ -18,12 +18,6 @@ describe('HomeComponent', () => {
     const fixture = TestBed.createComponent(HomeComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
-  });
-
-  it(`should have as title 'wesselslot'`, () => {
-    const fixture = TestBed.createComponent(HomeComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('wesselslot');
   });
 
   it('should render title in a h1 tag', () => {
