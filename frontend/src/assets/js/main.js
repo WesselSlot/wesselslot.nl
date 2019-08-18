@@ -170,7 +170,7 @@
 	------------------------------------------------------ */
 	var ssMasonryFolio = function() {
 		var containerBricks = $('.bricks-wrapper');
-
+        console.log('test');
 		containerBricks.imagesLoaded( function() {
 
 			containerBricks.masonry( {		  
@@ -250,7 +250,12 @@
 						});
 					}
 
-					$('.bricks-wrapper').masonry('layout');								
+                  $('.bricks-wrapper').masonry( {
+                      itemSelector: '.entry',
+                      columnWidth: '.grid-sizer',
+                      percentPosition: true,
+                      resize: true
+                  });
 				}
 		   });
 
@@ -616,14 +621,14 @@
 		ssSearch();
 		ssMasonryFolio();		
 		ssBricksAnimate();
-		ssFlexSlider();				
 		ssSmoothScroll();
 		ssPlaceholder();
 		ssAjaxChimp();		
 		ssBackToTop();
 		ssGoogleMap();
+        ssFlexSlider();
 
-	})();
+    })();
  
  
 
