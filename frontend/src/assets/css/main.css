@@ -1583,9 +1583,7 @@ header a {
  * header logo - (_layout.css) 
  * ------------------------------------------------------------------- */
 header .logo {
-	position: absolute;
-	left: 35px;
-	top: 6px;
+    float: left;
 	z-index: 601;
 }
 
@@ -1595,12 +1593,13 @@ header .logo a {
 	padding: 0;
 	outline: 0;
 	border: none;
-	width: 60px;
-	height: 60px;
-	background-size: 60px 60px;
+	width: 80px;
+	height: 80px;
+	background-size: 80px 80px;
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
+    background-image: url("../images/logo.png");
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	-webkit-transition: all 0.5s ease-in-out;
