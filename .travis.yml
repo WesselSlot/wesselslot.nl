@@ -19,4 +19,4 @@ install:
     - npm install
 
 script:
-    - build.sh
+    - bash build.sh
