@@ -13,10 +13,7 @@ addons:
 
 cache:
     directories:
-        - ./node_modules
-
-install:
-    - npm install
+        - frontend/node_modules
 
 script:
     - bash build.sh
