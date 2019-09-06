@@ -1,7 +1,6 @@
 dist: trusty
 sudo: false
-
-language: node_js
+language: node_js,
 node_js:
     - '10'
 
@@ -20,4 +19,4 @@ install:
     - npm install
 
 script:
-    - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+    - build.sh
