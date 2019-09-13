@@ -6,15 +6,18 @@ matrix:
         -   language: node_js
             node_js:
               - '10'
-            addons:
-                apt:
-                    sources:
-                        - google-chrome
-                    packages:
-                        - google-chrome-stable
+
+addons:
+    apt:
+        sources:
+            - google-chrome
+        packages:
+            - google-chrome-stable
+
 cache:
     directories:
         - frontend/node_modules
+
 script:
     - bash build.sh
 notifications:
