@@ -24,6 +24,6 @@ describe('HomeComponent', () => {
     const fixture = TestBed.createComponent(HomeComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to wesselslot!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome');
   });
 });
