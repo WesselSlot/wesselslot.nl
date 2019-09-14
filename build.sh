@@ -1,5 +1,4 @@
 #!/bin/sh
-LOCAL=$1
 
 if [ "$1" == "local" ]; then
     cd frontend/
